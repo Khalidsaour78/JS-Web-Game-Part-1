@@ -13,3 +13,15 @@ newImage('assets/green-character.gif', '100px', '100px');
 
 // Creating the pine tree
 newImage('assets/pine-tree.png', '450px', '200px');
+
+//Creating a tree
+newImage('assets/tree.png','200px', '300px');
+
+//Creating a pillar
+newImage('assets/pillar.png', '350px', '100px');
+
+//Creating a crate
+newImage('assets/crate.png', '150px', '200px');
+
+//Creating a well
+newImage('assets/well.png', '500px', '425px');
