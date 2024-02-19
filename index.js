@@ -7,6 +7,7 @@ function newImage(src, positionLeft, positionBottom){
     image.style.left = positionLeft;
     image.style.bottom = positionBottom;
     document.body.append(image);
+    return image;
 }
 // Creating  the green character
 newImage('assets/green-character.gif', '100px', '100px');
@@ -25,3 +26,14 @@ newImage('assets/crate.png', '150px', '200px');
 
 //Creating a well
 newImage('assets/well.png', '500px', '425px');
+
+function newItem(src, positionLeft, positionBottom){
+    let item = newImage(src, positionLeft, positionBottom);
+    item.addEventListener('dblclick', function(){
+    item.remove();
+})
+
+}
+newItem('assets/sword.png', '500px', '405px');
+newItem('assets/shield.png', '165px', '185px');
+newItem('assets/staff.png', '600px', '100px');
